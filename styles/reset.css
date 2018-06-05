@@ -1,0 +1,40 @@
+iframe{
+	width: 100%;
+}
+
+.page-footer{
+	position: relative;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal pre{
+	background-color: #eee;
+}
+
+
+.atoc{
+	right: 40px;
+	top: 40px;
+}
+
+
+.back-to-top{
+	background: #fff;
+	bottom: 0;
+	right: 40px;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal a{
+	color: rgb(51, 122, 183);
+}
+
+.back-to-top:hover{
+	background:#fff;
+}
+
+.back-to-top:hover .fa-arrow-up{
+	color: rgba(51, 122, 183, 0.9);
+}
+
+.back-to-top .fa-arrow-up{ 
+	color: rgba(51, 122, 183, 0.6);
+}

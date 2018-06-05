@@ -1,0 +1,18 @@
+
+
+<!-- 
+	传参：
+	num（一行按钮个数） 
+	value内容 
+	width（宽度）
+	type（按钮类型）
+
+	type：
+	type_1 黄底白字
+	type_2 白底灰字
+	type_3 灰底白字
+-->
+
+<% if (!width){ var width = '140px';} %>
+<% if (!num) { var length = '';}else{ var length = 'num_'+num; } %> 
+<input type="button" class="btn <%= type%> <%= length%>" value="<%= value%>" style="width:<%= width%>">

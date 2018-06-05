@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="applicable-device" content="mobile">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
+		<title>分页</title>
+
+		<link rel="stylesheet" href="../reset.css">
+		<link rel="stylesheet" href="../confont.css">
+		<link rel="stylesheet" href="./files/paging.css">
+
+	</head>
+
+	<body> 
+
+		<div style="height:100px;">
+			这里是列表
+		</div>
+
+		<div class="pageWrap clearfix">
+		   <div id="thisIsPager"></div>
+		</div>
+
+		<script src="../jquery1.12.3.js"></script>
+		<script src="./files/js/paging.js"></script>
+
+		<script>
+
+			function Pager( totalRecords, boxIds, callback , where){
+
+				//this.totalRecords = totalRecords;
+				//this.boxIds = boxIds;
+
+				//调用分页插件
+				kkpager.generPageHtml({
+					pagerid: boxIds, //容器
+					pno : 1, //当前页码
+					total : totalRecords,  //总页码
+					mode : 'click',  //点击事件
+					click: function(now_page, pagerId){
+						//点击页码后的逻辑处理
+						
+						//调用callback，页面滚动回指定位置
+						//需要从pagingArr中获取
+						var p_obj = pagingArr.filter(function(i, el){
+							return i.boxIds == pagerId
+						});
+						if( p_obj && p_obj.length ){
+							//页面滚动回指定位置
+							util.goToTop(p_obj[0].where);
+							//调用回调函数
+							p_obj[0].callback(now_page, pagerId);
+
+							//设置正确的页码
+							this.selectPage(now_page, pagerId, p_obj[0].totalRecords );
+						}
+
+						
+					}
+				})
+			}
+
+			var pagingArr = [];
+
+			function initPage(page, totalRecords, boxIds, callback, where, float){
+
+				//判断页码是否为1，如果是1，初始化，不是1则不执行后面的逻辑
+				if(page != 1){
+					return false;
+				}
+				
+				boxIds = boxIds ? boxIds: "kkpager";
+				callback = callback ? callback : function(){};
+				where = where ? where : 0;
+
+				//初始化分页
+				Pager(totalRecords, boxIds, callback , where);
+
+				if( float == 'middle'){
+					//表示分页位置需要居中
+					$("#"+boxIds +'.kkpagerSty').css('float', 'none');
+				}
+
+				//判断pagingArr里是否已有该分页
+				var p_obj = pagingArr.filter(function(i, el){
+					return i.boxIds == boxIds
+				});
+				if( !(p_obj && p_obj.length) ){
+					//没有，保存当前页面上所有的分页数据，用于点击页码时循环
+					pagingArr.push({
+						where: where,
+						boxIds: boxIds,
+						callback: callback,
+						totalRecords: totalRecords
+					})
+				}
+			}
+
+			initPage(1, 10, 'thisIsPager', function(){});
+			
+		</script>
+		
+	</body>
+
+</html>

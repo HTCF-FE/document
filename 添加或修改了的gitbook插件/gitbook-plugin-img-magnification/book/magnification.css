@@ -1,0 +1,44 @@
+/**
+ * 图片放大查看的样式
+ *
+ * @author yangjinlai 2018-05-24
+ */
+
+
+.openBig_uiFrame{
+	display: none;
+	position: fixed;
+	background-color: rgba(0,0,0,0.7);
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+}
+
+.openBig_uiFrame img{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	max-width: 90%;
+}
+
+/*.openBig_uiFrame .openBig_close{
+	position: absolute;
+	font-size: 23px;
+	color: #fff;
+	right: 40px;
+	top: 30px;
+	border: 2px solid #fff;
+	border-radius: 40px;
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	box-sizing: content-box;
+	cursor: pointer;
+}*/

@@ -1,0 +1,67 @@
+/**
+ * 新按钮样式
+ *
+ * 按钮两种：
+ * 1. 默认宽度，不需给.btn额外添加class，默认140px
+ * 2. 宽度根据父元素宽度平均分配（叫做大按钮），需要给.btn添加class .type_big，并且有?个按钮就需要再添加
+ * 		class .num_?，用来获取正常宽度
+ *
+ * 选中效果：给.btn 添加 class  .active
+ */
+.btn {
+  display: block;
+  font-weight: bold;
+  height: 46px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.btn + .btn {
+  display: inline-block;
+}
+.btn.type_1 {
+  background: #f4cf5c;
+  color: #fff;
+}
+.btn.type_1:disabled {
+  background: #c7c7c7;
+  color: #fff;
+}
+.btn.type_2 {
+  background: #fff;
+  border: 1px solid #727272;
+  color: #727272;
+}
+.btn.type_3 {
+  background: #c7c7c7;
+  color: #fff;
+}
+.btn.type_4 {
+  background: #fff;
+  border: 2px solid #f4cf5c;
+  color: #f4cf5c;
+  font-weight: bold;
+}
+.btn.type_5 {
+  background: #f4cf5c;
+  color: #7d5010;
+}
+.btn {
+  width: 140px;
+}
+.btn.big {
+  width: 172px;
+}
+.btn + .btn {
+  margin-left: 20px;
+}
+.btn.num_2 {
+  margin-right: 20px;
+  display: inline-block;
+}
+.btn.num_2 + .btn {
+  margin-left: 0px;
+}

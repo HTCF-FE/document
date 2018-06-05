@@ -1,0 +1,16 @@
+使用gitbook
+
+1.安装git和gitbook，这一步请在网上搜索
+
+2.在根目录下（有book.json）的目录，右键，打开git Bash，执行gitbook install
+
+3.同样在根目录下（所有命令皆在根目录下执行）打开的git Bash上，执行gitbook build，打包文件
+
+4.打包完文件后，执行gitbook serve，开启本地服务，在浏览器上访问localhost:4000，就可以打开页面了
+
+5.此后修改文件会自动触发gitbook serve，不需重新打包和重启服务
+  
+  但有些文件改了可能不会触发，如有此情况，需手动重新打包文件（Ctrl+c停止服务后，执行gitbook build）
+
+6.其他命令请自行搜索文档~
+

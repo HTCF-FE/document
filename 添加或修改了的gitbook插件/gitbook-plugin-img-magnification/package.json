@@ -1,0 +1,17 @@
+{
+  "name": "gitbook-plugin-img-magnification",
+  "description": "add other file to html",
+  "version": "0.0.1",
+  "main": "index.js",
+  "engines": {
+    "gitbook": "*"
+  },
+  "keywords": [
+    "gitbook",
+    "add",
+    "other"
+  ],
+
+  "license": "UNLICENSED"
+
+}

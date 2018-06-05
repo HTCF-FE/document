@@ -1,0 +1,20 @@
+<!-- 
+	传参：
+	num（一行按钮个数） 
+	value内容 
+	width（宽度）
+	type（按钮类型）
+
+	type：
+	type_1 黄底白字
+	type_2 白底灰字
+	type_3 灰底白字
+-->
+
+<input type="button" class="btn {{type}} num_{{getLength ../list}} form_btn_{{@index}}" value="{{buttonTxt}}" style="width:{{width}}" {{#if readonly}} readonly {{else}} {{#if ../readonly}}  readonly {{/if}} {{/if}} {{#if disabled }} disabled {{else}} {{#if ../disabled}}  disabled {{/if}} {{/if}}  >
+
+<!-- <% if (!!num) { %> 
+<input type="button" class="btn {{type}} num_{{num}}" value="{{value}}" style="width:{{width}}">
+<% } else {%>  
+<input type="button" class="btn {{type}}" value="{{value}}" style="width:{{width}}">
+<% } %>  -->
