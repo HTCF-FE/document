@@ -79,7 +79,7 @@
         data-chapter-title="sshkey生成及配置"
         data-filepath="document/sshKey.md"
         data-basepath=".."
-        data-revision="Fri Aug 24 2018 09:48:25 GMT+0800 (中国标准时间)"
+        data-revision="Fri Aug 24 2018 10:38:12 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
     
 
@@ -2139,7 +2139,11 @@
 <li><a href="#&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</a></li>
 </ul>
 </li>
-<li><a href="#&#x5C06;sshkey&#x6DFB;&#x52A0;&#x5230;git&#x9879;&#x76EE;&#x4E0A;">&#x5C06;sshkey&#x6DFB;&#x52A0;&#x5230;git&#x9879;&#x76EE;&#x4E0A;</a></li>
+<li><a href="#&#x5C06;sshkey&#x6DFB;&#x52A0;&#x5230;gitgitlab&#x7B49;&#x9879;&#x76EE;&#x4E0A;">&#x5C06;sshkey&#x6DFB;&#x52A0;&#x5230;git/gitlab&#x7B49;&#x9879;&#x76EE;&#x4E0A;</a><ul>
+<li><a href="#&#x4EE5;git&#x4E3A;&#x4F8B;">&#x4EE5;git&#x4E3A;&#x4F8B;</a></li>
+<li><a href="#&#x4EE5;&#x592A;&#x884C;&#x9879;&#x76EE;&#x7684;gitlab&#x4E3A;&#x4F8B;">&#x4EE5;&#x592A;&#x884C;&#x9879;&#x76EE;&#x7684;gitLab&#x4E3A;&#x4F8B;</a></li>
+</ul>
+</li>
 </ul>
 <!-- tocstop -->
 <p>&#x5982;&#x679C;&#x4F7F;&#x7528;<code>git</code>&#x63A7;&#x5236;&#x4EE3;&#x7801;&#x7684;&#x8BDD;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x672C;&#x5730;&#x7535;&#x8111;&#x4E0A;&#x751F;&#x6210;<code>sshkey</code>&#xFF0C;&#x5E76;&#x540C;&#x8D26;&#x6237;&#x7ED1;&#x5B9A;</p>
@@ -2203,10 +2207,21 @@
 <p>&#x67E5;&#x770B;<code>git</code>&#x7528;&#x6237;&#x540D;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;<code>git bash</code>&#x91CC;&#x6267;&#x884C;<code>git config --global user.name</code></p>
 <p>&#x5982;&#x8FD9;&#x4E2A;<code>config</code>&#x6587;&#x4EF6;&#x91CC;&#x6709;&#x4E24;&#x6761;&#x914D;&#x7F6E;&#xFF08;#&#x5F00;&#x5934;&#x7684;&#x8BED;&#x53E5;&#x4E3A;&#x6CE8;&#x91CA;&#xFF09;&#xFF1A;</p>
 <p><img src="demo/img/ssh/config.png" alt="PNG"></p>
-<h3 id="&#x5C06;sshkey&#x6DFB;&#x52A0;&#x5230;git&#x9879;&#x76EE;&#x4E0A;">&#x5C06;sshkey&#x6DFB;&#x52A0;&#x5230;git&#x9879;&#x76EE;&#x4E0A;</h3>
-<p>&#x6309;&#x7167;<code>git</code>&#x6216;<code>gitLab</code>&#x6216;&#x5176;&#x4ED6;&#x5E73;&#x53F0;&#x7684;&#x8981;&#x6C42;&#xFF0C;&#x5C06;&#x521A;&#x521A;&#x751F;&#x6210;&#x7684;<code>.pub</code>&#x540E;&#x7F00;&#x540D;&#x7684;&#x6587;&#x4EF6;&#x5185;&#x5BB9;&#x6DFB;&#x52A0;&#x5230;&#x5BF9;&#x5E94;&#x5E73;&#x53F0;&#x4E0A;&#xFF0C;&#x7136;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x6267;&#x884C;<code>clone pull push</code>&#x7B49;&#x5404;&#x9879;&#x64CD;&#x4F5C;&#x4E86; </p>
+<h3 id="&#x5C06;sshkey&#x6DFB;&#x52A0;&#x5230;gitgitlab&#x7B49;&#x9879;&#x76EE;&#x4E0A;">&#x5C06;sshkey&#x6DFB;&#x52A0;&#x5230;git/gitlab&#x7B49;&#x9879;&#x76EE;&#x4E0A;</h3>
+<h5 id="&#x4EE5;git&#x4E3A;&#x4F8B;">&#x4EE5;git&#x4E3A;&#x4F8B;</h5>
+<p><img src="demo/img/ssh/ssh.png" alt="PNG"></p>
+<p>&#x6253;&#x5F00;&#x8D26;&#x6237;&#x7684;<code>settings</code> --&gt;  <code>SSH and GPG keys</code> --&gt; New SSH key&#x6309;&#x94AE;</p>
+<p>&#x70B9;&#x51FB;&#x8FD9;&#x4E2A;&#x6309;&#x94AE;&#xFF0C;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;<code>ssh key</code></p>
+<p><img src="demo/img/ssh/sshKey.png" alt="PNG"></p>
+<p>&#x521A;&#x521A;&#x751F;&#x6210;&#x7684;<code>sshkey</code>&#x5728;&#x8FD9;&#x4E2A;&#x8DEF;&#x5F84;&#x4E0B;&#xFF1A;</p>
+<p><code>C:\Users\&#x7528;&#x6237;&#x540D;\.ssh</code></p>
+<p>&#x6253;&#x5F00;&#x521A;&#x521A;&#x751F;&#x6210;&#x7684;&#x6709;<code>.pub</code>&#x540E;&#x7F00;&#x540D;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x590D;&#x5236;&#x91CC;&#x9762;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x7C98;&#x8D34;&#x5230;<code>key</code>&#x6587;&#x672C;&#x6846;&#x4E2D;&#xFF0C;<code>title</code>&#x53EF;&#x4EE5;&#x968F;&#x4FBF;&#x8D77;&#x540D;&#xFF0C;&#x70B9;&#x51FB;<code>Add SSH key</code>&#x5C31;&#x53EF;&#x4EE5;&#x4E86;</p>
+<h5 id="&#x4EE5;&#x592A;&#x884C;&#x9879;&#x76EE;&#x7684;gitlab&#x4E3A;&#x4F8B;">&#x4EE5;&#x592A;&#x884C;&#x9879;&#x76EE;&#x7684;gitLab&#x4E3A;&#x4F8B;</h5>
+<p>&#x767B;&#x5F55;&#x592A;&#x884C;&#x9879;&#x76EE;&#x7684;gitLab&#x540E;&#xFF0C;&#x70B9;&#x51FB;&#x4E2A;&#x4EBA;&#x8D44;&#x6599;&#x8BBE;&#x7F6E;--&gt;SSH&#x5BC6;&#x94A5;</p>
+<p><img src="demo/img/ssh/gitLabSSH.png" alt="PNG"></p>
+<p>&#x540C;&#x4E0A;&#x9762;&#x8BF4;&#x7684;&#x4E00;&#x6837;&#xFF0C;&#x5C06;&#x751F;&#x6210;&#x7684;&#x6709;<code>.pub</code>&#x540E;&#x7F00;&#x540D;&#x7684;&#x6587;&#x4EF6;&#x91CC;&#x7684;&#x5185;&#x5BB9;&#x590D;&#x5236;&#x7C98;&#x8D34;&#x5230;<strong>&#x516C;&#x94A5;</strong>&#x6587;&#x672C;&#x6846;&#x4E2D;&#xFF0C;&#x6807;&#x9898;&#x53EF;&#x4EE5;&#x968F;&#x4FBF;&#x8D77;&#xFF0C;&#x70B9;&#x51FB;<strong>&#x589E;&#x52A0;&#x5BC6;&#x94A5;</strong>&#x6309;&#x94AE;&#x5373;&#x53EF;</p>
 <footer class="page-footer"><span class="copyright">&#x524D;&#x7AEF;&#x6846;&#x67B6;&#x2014;&#x2014;&#x7248;&#x672C;2.3 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">File Modify: 
-2018-07-27 18:53:19
+2018-08-24 10:38:06
 </span></footer>
 
 
