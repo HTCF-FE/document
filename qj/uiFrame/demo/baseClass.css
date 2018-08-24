@@ -1,0 +1,101 @@
+
+/**
+ * 可以公用的class类
+ *
+ * 两部分：
+ * 1. 不可直接使用的样式，作为less变量，可以在其他less文件中使用（提取公用样式）
+ * 2. 可直接使用的样式，在页面上添加class即可
+ */
+/******种类1 ************************/
+/*字体统一样式*/
+.font_size {
+  font-size: 16px;
+}
+.font_family {
+  font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", Tahoma, "宋体b8b体", "SimSun", sans-serif;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+.num_family {
+  font-family: "ArialMt";
+}
+.english {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+/*圆角方法（四角统一）*/
+/*圆角方法（四角值不统一）*/
+/* 阴影方法box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.10); */
+/*字体阴影*/
+/*字体渐变*/
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.letter_middle {
+  display: box;
+  display: -webkit-box;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-pack: center;
+  -webkit-box-pack: center;
+}
+.elastic_mask {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+/*****************种类2*************************/
+.wrap {
+  width: 1200px;
+  margin-left: auto !important;
+  margin-right: auto!important;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+}
+/*清空浮动的两种方法,选用clearfix*/
+.clear {
+  clear: both;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.thisIsDisabled {
+  background: #c7c7c7 !important;
+}
+.thisIsDisabled input[type=text]:disabled,
+.thisIsDisabled input[type=password]:disabled,
+.thisIsDisabled textarea:disabled {
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+  white-space: nowrap!important;
+  cursor: default!important;
+}

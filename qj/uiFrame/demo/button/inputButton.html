@@ -9,27 +9,84 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black"><meta charset="UTF-8">
 		<title>input类的按钮</title>
 
+		<link rel="stylesheet" href="../iconfont.css">
+		<link rel="stylesheet" href="../baseClass.css">
 		<link rel="stylesheet" href="../reset.css">
-		<link rel="stylesheet" href="../confont.css">
 		<link rel="stylesheet" href="./files/inputButton.css">
 
 	</head>
 
 	<body> 
 
-		<p>一个黄底白字的按钮</p>
+		<p>1. 基本按钮（默认宽度`140px`，高度`46px`）</p>
 
-		<input type="button" class="btn type_1" value="下一步">
+		<p>一个黄底白字的按钮</p>
+		<input type="button" class="btn type_1" value="这是一个按钮">
 
 		<p>一个灰底白字的按钮</p>
-
-		<input type="button" class="btn type_3" value="返回上一步">
+		<input type="button" class="btn type_3" value="这是一个按钮">
 
 		<p>一个灰边白底灰字的按钮</p>
+		<input type="button" class="btn type_2" value="这是一个按钮">
 
-		<input type="button" class="btn type_2" value="返回上一步">
+		<p>一个白底黄字的按钮</p>
+		<input type="button" class="btn type_4" value="这是一个按钮">
 
-		
+		<p>一个黄底棕色字的按钮</p>
+		<input type="button" class="btn type_5" value="这是一个按钮">
+ 
+		<p>一个白底深蓝色边框，深蓝色字的按钮</p>
+		<input type="button" class="btn type_6" value="这是一个按钮">
+ 
+
+		<p>2. 在以上几种按钮的基础上，还可以添加其他的变化：</p>
+
+		<p>（1）黄底白字且不可点击(disabled)</p>
+		<input type="button" class="btn type_1" value="这是一个按钮" disabled="disabled">
+
+		<p>（2）白底深蓝色边框，深蓝色字的按钮的另一个状态（白底红色边框红色字）</p>
+		<input type="button" class="btn type_6 choiced" value="这是一个按钮">
+
+		<p>（3）按钮变为椭圆形</p>
+		<input type="button" class="btn type_1 r_l_radius" value="这是一个按钮">
+		<input type="button" class="btn type_2 r_l_radius" value="这是一个按钮">
+		<input type="button" class="btn type_3 r_l_radius" value="这是一个按钮">
+		<input type="button" class="btn type_4 r_l_radius" value="这是一个按钮">
+		<input type="button" class="btn type_5 r_l_radius" value="这是一个按钮">
+		<input type="button" class="btn type_6 r_l_radius" value="这是一个按钮">
+		<input type="button" class="btn type_1 r_l_radius" value="这是一个按钮" disabled="disabled">
+		<input type="button" class="btn type_6 choiced r_l_radius" value="这是一个按钮">
+
+		<p>（4）多个按钮并列</p>
+		<input type="button" class="btn type_1 num_2" value="这是一个按钮">
+		<input type="button" class="btn type_2 num_2" value="这是一个按钮">
+
+		<p>（5）带icon的按钮</p>
+		<div class="btn type_6">
+			<span class="iconfont">&#xe60c;</span>
+			<span class="value">收藏</span>
+		</div>
+
+		<p>（6）固定172px宽的按钮</p>
+		<input type="button" class="btn type_1 big" value="这是一个按钮">
+		<input type="button" class="btn type_2 big" value="这是一个按钮">
+		<input type="button" class="btn type_3 big" value="这是一个按钮">
+		<input type="button" class="btn type_4 big" value="这是一个按钮">
+		<input type="button" class="btn type_5 big" value="这是一个按钮">
+		<input type="button" class="btn type_6 big" value="这是一个按钮">
+		<input type="button" class="btn type_1 big" value="这是一个按钮" disabled="disabled">
+		<input type="button" class="btn type_6 choiced big" value="这是一个按钮">
+
+		<p>（7）自定义宽高的按钮</p>
+		<input type="button" class="btn type_1" value="这是一个按钮" style="width:84px;height:32px;line-height:32px;">
+		<input type="button" class="btn type_2" value="这是一个按钮" style="width:100px;">
+		<input type="button" class="btn type_3" value="这是一个按钮" style="width:40px;height:20px;line-height:20px;">
+		<input type="button" class="btn type_4 r_l_radius" value="这是一个按钮" style="width:84px;height:32px;line-height:32px;">
+		<input type="button" class="btn type_1 r_l_radius" value="这是一个按钮" disabled="disabled" style="width:60px;height:40px;line-height:40px;">
+
+
+
+
 	</body>
 
 </html>

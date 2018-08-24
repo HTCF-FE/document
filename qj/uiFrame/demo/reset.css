@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+html {
+  min-height: 100%;
+}
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+img,
+i,
+iframe,
+a,
+input,
+label,
+span,
+textarea,
+i,
+em,
+section,
+table,
+td,
+tr,
+th {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  vertical-align: top;
+  box-sizing: border-box;
+  border: 0;
+  resize: none;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+table,
+table tr,
+table td,
+table th {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+body {
+  min-width: 1280px;
+  min-height: 660px;
+  font-size: 16px;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", Tahoma, "宋体b8b体", "SimSun", sans-serif;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+img {
+  border: none;
+}
+a:hover {
+  text-decoration: none;
+}
+input::-ms-clear {
+  display: none;
+}
+input[type=checkbox],
+input[type=radio] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type=checkbox]::-ms-check,
+input[type=radio]::-ms-check {
+  border: 0;
+  background: transparent;
+  color: transparent;
+}
+input,
+textarea {
+  font-size: 14px;
+  color: #333;
+  word-break: break-all;
+  background: transparent;
+  /*给chrome浏览器去掉表单自动填充的背景色*/
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #c7c7c7;
+  font-size: 14px;
+}
+input::-webkit-autofill,
+textarea::-webkit-autofill {
+  background-color: #fff;
+  background-image: none;
+  color: #333;
+}
+textarea {
+  width: 100%;
+  height: 100%;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", Tahoma, "宋体b8b体", "SimSun", sans-serif;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+}
+textarea::-webkit-input-placeholder,
+textarea::-ms-input-placeholder,
+textarea::-moz-placeholder {
+  line-height: 20px;
+}
+input[type=text],
+input[type=password] {
+  border-radius: 5px 0;
+  -webkit-border-radius: 5px 0;
+  -ms-border-radius: 5px 0;
+  -o-border-radius: 5px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 46px;
+  padding: 10px 0;
+  text-indent: 16px;
+  line-height: 14px;
+}
+
+
+/*为了处理页面里的Iframe */
+html{padding:10px;}
+
+body{
+    min-width: 100%;
+    min-height: 100%;
+}

@@ -1,13 +1,3 @@
-/**
- * 新按钮样式
- *
- * 按钮两种：
- * 1. 默认宽度，不需给.btn额外添加class，默认140px
- * 2. 宽度根据父元素宽度平均分配（叫做大按钮），需要给.btn添加class .type_big，并且有?个按钮就需要再添加
- * 		class .num_?，用来获取正常宽度
- *
- * 选中效果：给.btn 添加 class  .active
- */
 .btn {
   display: block;
   font-weight: bold;
@@ -18,9 +8,10 @@
   -o-border-radius: 5px;
   cursor: pointer;
   border: none;
+  font-size: 14px;
 }
-.btn + .btn {
-  display: inline-block;
+div.btn {
+  text-align: center;
 }
 .btn.type_1 {
   background: #f4cf5c;
@@ -32,8 +23,8 @@
 }
 .btn.type_2 {
   background: #fff;
-  border: 1px solid #727272;
-  color: #727272;
+  border: 1px solid #c7c7c7;
+  color: #999;
 }
 .btn.type_3 {
   background: #c7c7c7;
@@ -49,19 +40,46 @@
   background: #f4cf5c;
   color: #7d5010;
 }
+.btn.type_6 {
+  background: #fff;
+  color: #6c8ca5;
+  border: 1px solid #6c8ca5;
+}
+.btn.type_7 {
+  background: #fff;
+  color: #f52f3e;
+  border: 1px solid #f52f3e;
+}
+.btn.r_l_radius {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+}
+.btn .iconfont {
+  line-height: 46px;
+}
+.btn .iconfont + .value {
+  line-height: 46px;
+}
 .btn {
   width: 140px;
 }
 .btn.big {
   width: 172px;
 }
-.btn + .btn {
-  margin-left: 20px;
-}
-.btn.num_2 {
+.btn.btnMore {
   margin-right: 20px;
-  display: inline-block;
+  float: left;
 }
-.btn.num_2 + .btn {
+.btn.btnMore.num_2 {
+  width: calc(50% - 20px);
+}
+.btn.btnMore + .btn {
   margin-left: 0px;
+}
+.btn.btnMore:last-child {
+  margin-right: 0;
 }

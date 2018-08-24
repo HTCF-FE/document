@@ -1,0 +1,50 @@
+.check,
+.check * {
+  vertical-align: middle;
+}
+.check .checkBox {
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+.check .checkBox input[type=checkbox],
+.check .checkBox input[type=radio] {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.check .checkBox input[type=checkbox] + label,
+.check .checkBox input[type=radio] + label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  line-height: 16px;
+  vertical-align: top;
+}
+.check .checkBox input[type=checkbox] + label:after,
+.check .checkBox input[type=radio] + label:after {
+  content: '\e648';
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #999;
+}
+.check .checkBox input[type=checkbox]:checked + label:after,
+.check .checkBox input[type=radio]:checked + label:after {
+  content: '\e647';
+  color: #f4cf5c;
+}
+.check .checkBox + span,
+.check .checkBox + div {
+  display: inline-block;
+  font-size: 14px;
+  color: #5e5e5e;
+  cursor: pointer;
+}

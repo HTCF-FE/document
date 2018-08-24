@@ -1,0 +1,56 @@
+/**
+ * 用checkBox模拟按钮
+ */
+.radioButton {
+  display: inline-block;
+  height: 46px;
+  cursor: pointer;
+  position: relative;
+  font-size: 14px;
+  text-align: center;
+}
+.radioButton input[type=radio] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  z-index: 2;
+  border: 1px solid #c7c7c7;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.radioButton input[type=radio] + label {
+  display: inline-block;
+  width: 100%;
+  height: 46px;
+  position: relative;
+  line-height: 47px;
+  background: #fff;
+  color: #727272;
+}
+.radioButton input[type=radio]:checked {
+  border: 2px solid #f4cf5c;
+}
+.radioButton input[type=radio]:checked + label {
+  color: #333;
+  font-weight: bold;
+}
+.radioButton {
+  width: 140px;
+}
+.radioButton.btnMore {
+  margin-right: 20px;
+  float: left;
+}
+.radioButton.big.btnMore {
+  margin-right: 40px;
+}
+.radioButton.big.btnMore.num_2 {
+  width: calc((100% - 40px) / 2);
+}
+.radioButton:last-child {
+  margin-right: 0!important;
+}

@@ -5,7 +5,7 @@
  */
 
 
-.openBig_uiFrame{
+.img_openBig_uiFrame, .code_OpenBig_uiFrame{
 	display: none;
 	position: fixed;
 	background-color: rgba(0,0,0,0.7);
@@ -16,7 +16,7 @@
 	z-index: 99999;
 }
 
-.openBig_uiFrame img{
+.img_openBig_uiFrame img{
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -24,6 +24,35 @@
 	left: 0;
 	margin: auto;
 	max-width: 90%;
+}
+
+.code_OpenBig_uiFrame code{
+	position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    padding: 20px;
+	white-space: pre-wrap;
+	font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+	direction: ltr;
+	border: none;
+	color: inherit;
+	page-break-inside: avoid;
+	line-height: 1.7;
+}
+
+.enlarge_button{
+	position: absolute;
+    top: 5px;
+    right: 70px;
+    padding: 3px;
+    background-color: rgb(49, 62, 78);
+    color: white;
+    border-radius: 5px;
+    border: 2px solid rgb(204, 204, 204);
 }
 
 /*.openBig_uiFrame .openBig_close{
